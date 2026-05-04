@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&display=swap');
+
+:root {
+  --gold: #C9A84C;
+  --black: #000000;
+  --white: #ffffff;
+}
+
+* {
+  font-family: 'Plus Jakarta Sans', sans-serif !important;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--black) !important;
+  color: var(--white) !important;
+  margin: 0;
+  padding-top: 100px;
+}
+
+/* --- LOGO INCLINADO Y GRUESO (ESTILO ITALIC PREMIUM) --- */
+.logo-luxury {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  font-style: italic; /* Letra inclinada */
+  transition: 0.3s;
+}
+
+.logo-sublimacion {
+  color: var(--gold) !important;
+  font-weight: 800; /* Más gruesa */
+  font-size: 1.7rem;
+  letter-spacing: 1px;
+  text-shadow: 0 0 10px rgba(201, 168, 76, 0.4);
+}
+
+.logo-5c {
+  color: #FFFFFF !important;
+  font-weight: 900; /* Extra gruesa */
+  font-size: 2.2rem;
+  margin-left: 5px;
+  text-shadow: 2px 2px 0px var(--gold); /* Sombra dorada para resaltar */
+}
+
+/* --- RECUADROS DE PRODUCTO (COLORES RECUPERADOS) --- */
+.cat-card {
+  background-color: #000000 !important;
+  border: 1px solid var(--gold) !important;
+  padding: 25px;
+  text-align: center;
+  height: 100%;
+}
+
+.titulo-dorado-recuadro {
+  color: var(--gold) !important; /* Títulos Dorados */
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1rem;
+  margin-bottom: 12px;
+}
+
+.texto-blanco-recuadro {
+  color: #FFFFFF !important; /* Descripción Blanca */
+  font-size: 0.8rem;
+  margin-bottom: 15px;
+}
+
+.precio-dorado {
+  color: var(--gold) !important; /* Precio Dorado */
+  font-weight: 800;
+  font-size: 1.1rem;
+}
+
+/* --- FORMULARIOS --- */
+.form-control {
+  background-color: rgba(255, 255, 255, 0.05) !important;
+  color: #FFFFFF !important;
+  border: 1px solid #444 !important;
+  border-radius: 0px !important;
+}
+
+.form-control::placeholder {
+  color: #FFFFFF !important;
+  opacity: 0.8;
+}
