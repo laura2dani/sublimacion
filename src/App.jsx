@@ -31,7 +31,7 @@ const Register = () => {
   const enviarRegistro = async (e) => {
     e.preventDefault();
     try {
-      const respuesta = await fetch('http://localhost:5000/api/usuarios', {
+      const respuesta = await fetch('http://localhost:4000/api/usuarios', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(usuario)
@@ -124,7 +124,7 @@ function App() {
   const enviarWhatsApp = async () => {
     if (carrito.length === 0) return alert("El carrito está vacío");
     try {
-      await fetch('http://localhost:5000/api/pedidos', {
+      await fetch('http://localhost:4000/api/pedidos', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({

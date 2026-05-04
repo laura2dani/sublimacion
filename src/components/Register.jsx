@@ -86,7 +86,7 @@ function App() {
 
     // 1. Guardar en Base de Datos (Backend)
     try {
-      await fetch('http://localhost:5000/api/pedidos', {
+      await fetch('http://localhost:4000/api/pedidos', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
